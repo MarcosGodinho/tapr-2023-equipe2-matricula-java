@@ -9,3 +9,5 @@ az login --use-device-code
 
 az ad signed-in-user show
 ```
+
+TESTANDO
