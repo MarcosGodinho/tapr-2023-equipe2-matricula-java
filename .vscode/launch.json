@@ -9,6 +9,16 @@
             "projectName": "microservmatricula",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-microservmatriculaApplication<microservmatricula>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.edu.univille.microservmatricula.microservmatriculaApplication",
+            "projectName": "microservmatricula",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

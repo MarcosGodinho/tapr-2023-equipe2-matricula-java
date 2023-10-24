@@ -8,4 +8,6 @@ az login -u marcos.godinho@univille.br
 az login --use-device-code
 
 az ad signed-in-user show
+
+HATEOAS em APIs Restful
 ```

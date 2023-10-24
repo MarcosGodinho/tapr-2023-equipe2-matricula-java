@@ -14,6 +14,8 @@ public class Matricula {
     public String idMatricula;
 
     @PartitionKey
+    public String CPF;
+
     public Date dataIngresso;
     
     public int periodoCursando;
