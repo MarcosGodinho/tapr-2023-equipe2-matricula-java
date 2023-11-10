@@ -36,9 +36,9 @@ public class MatriculaServiceImpl implements MatriculaService{
 
     @Override
     public Matricula getById(String id) {
-        var carro = repository.findById(id);
-        if(carro.isPresent())
-            return carro.get();
+        var matricula = repository.findById(id);
+        if(matricula.isPresent())
+            return matricula.get();
         return null;
     }
 

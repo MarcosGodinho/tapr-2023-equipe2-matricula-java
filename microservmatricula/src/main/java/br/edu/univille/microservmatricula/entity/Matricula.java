@@ -14,14 +14,8 @@ public class Matricula {
     public String idMatricula;
 
     @PartitionKey
-    public String CPF;
+    public String cpfAluno;
 
-    public String getCPF() {
-        return CPF;
-    }
-    public void setCPF(String cPF) {
-        CPF = cPF;
-    }
     public Date dataIngresso;
     
     public int periodoCursando;
@@ -31,6 +25,12 @@ public class Matricula {
     }
     public void setIdMatricula(String idMatricula) {
         this.idMatricula = idMatricula;
+    }
+    public String getCPF() {
+        return cpfAluno;
+    }
+    public void setCPF(String cPF) {
+        cpfAluno = cPF;
     }
     public Date getDataIngresso() {
         return dataIngresso;
