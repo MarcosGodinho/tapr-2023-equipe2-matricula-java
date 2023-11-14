@@ -6,20 +6,21 @@ POST http://localhost:8080/api/v1/matriculas
 Content-Type: application/json
 
 {
-  "dataIngresso": "2022-11-09",
-  "periodoCursando": "1",
-  "cpfAluno": "111.222.333-44"
+  "dataIngresso": "2023-11-09",
+  "periodoCursando": "3",
+  "cpf": "123.434.755-10"
 }
 
 ### Atualizar o  Carro
-PUT http://localhost:8080/api/v1/matriculas/eb936e3d-e3e0-4a79-a68f-9b6e51f5ab2b
+PUT http://localhost:8080/api/v1/matriculas/c65a51bb-6bd1-420c-a0db-d82c22d7215f
 Content-Type: application/json
 
 {
   "dataIngresso": "2023-01-01",
-  "periodoCursando": "1"
+  "periodoCursando": "1",
+  "cpf": "222.333.444-55"
 }
 
 ### Remover o Carro
-DELETE  http://localhost:8080/api/v1/matriculas/152c1399-84fe-42b0-b2c6-6cc736372e27
+DELETE  http://localhost:8080/api/v1/matriculas/bd3b0428-508f-4a8d-8144-1f0e91d78075
 Content-Type: application/json

@@ -10,27 +10,27 @@ import com.azure.spring.data.cosmos.core.mapping.PartitionKey;
 public class Matricula {
 
     @Id
-    @GeneratedValue
-    public String idMatricula;
-
     @PartitionKey
-    public String cpfAluno;
+    @GeneratedValue
+    public String id;
+
+    public String cpf;
 
     public Date dataIngresso;
     
     public int periodoCursando;
 
-    public String getIdMatricula() {
-        return idMatricula;
+    public String getID() {
+        return id;
     }
-    public void setIdMatricula(String idMatricula) {
-        this.idMatricula = idMatricula;
+    public void setID(String id) {
+        this.id = id;
     }
     public String getCPF() {
-        return cpfAluno;
+        return cpf;
     }
     public void setCPF(String cPF) {
-        cpfAluno = cPF;
+        cpf = cPF;
     }
     public Date getDataIngresso() {
         return dataIngresso;

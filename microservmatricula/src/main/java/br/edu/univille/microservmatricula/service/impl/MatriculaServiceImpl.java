@@ -30,7 +30,7 @@ public class MatriculaServiceImpl implements MatriculaService{
 
     @Override
     public Matricula saveNew(Matricula matricula) {
-	    matricula.setIdMatricula(null);
+	    matricula.setID(null);
 	    return repository.save(matricula);
     }
 
@@ -50,6 +50,7 @@ public class MatriculaServiceImpl implements MatriculaService{
 
             matriculaNova.setCPF(matricula.getCPF());
             matriculaNova.setDataIngresso(matricula.getDataIngresso());
+            matriculaNova.setPeriodoCursando(matricula.getPeriodoCursando());
 
             return repository.save(matriculaNova);
         }
