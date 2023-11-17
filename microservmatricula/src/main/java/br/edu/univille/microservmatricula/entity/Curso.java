@@ -14,7 +14,6 @@ public class Curso {
     @GeneratedValue
     public String id;
     public String nome;
-    
     public String getId() {
         return id;
     }

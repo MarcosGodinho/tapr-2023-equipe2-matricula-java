@@ -16,20 +16,20 @@ public class Matricula {
     public String cpf;
     public Date dataIngresso;
     public int periodoCursando;
-    public String alunoId;
-    public String cursoId;
+    public Aluno aluno;
+    public Curso curso;
 
-    public String getCursoId() {
-        return cursoId;
+    public Aluno getAluno() {
+        return aluno;
     }
-    public void setCursoId(String cursoId) {
-        this.cursoId = cursoId;
+    public void setAluno(Aluno aluno) {
+        this.aluno = aluno;
     }
-    public String getAlunoId() {
-        return alunoId;
+    public Curso getCurso() {
+        return curso;
     }
-    public void setAlunoId(String alunoId) {
-        this.alunoId = alunoId;
+    public void setCurso(Curso curso) {
+        this.curso = curso;
     }
     public String getID() {
         return id;
