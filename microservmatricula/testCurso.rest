@@ -1,0 +1,22 @@
+## Ler todos os Cursos
+GET http://localhost:8080/api/v1/cursos
+
+### Inserir um novo Curso
+POST http://localhost:8080/api/v1/cursos
+Content-Type: application/json
+
+{
+  "nome": "Topicos Avançados em Programação"
+}
+
+### Atualizar o Curso
+PUT http://localhost:8080/api/v1/cursos/ca03c3df-e557-423e-96b6-0c59c321d3fc
+Content-Type: application/json
+
+{
+  "nome": "Design sem Arquitetura de Software"
+}
+
+### Remover o Curso
+DELETE  http://localhost:8080/api/v1/cursos/ca03c3df-e557-423e-96b6-0c59c321d3fc
+Content-Type: application/json

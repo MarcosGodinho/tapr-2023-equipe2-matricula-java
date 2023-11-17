@@ -1,0 +1,24 @@
+## Ler todos as Matriculas
+GET http://localhost:8080/api/v1/alunos
+
+### Inserir um novo Aluno
+POST http://localhost:8080/api/v1/alunos
+Content-Type: application/json
+
+{
+  "nome": "Marcos Enrico Damazzini Godinho",
+  "cpf": "123.434.755-10"
+}
+
+### Atualizar o Aluno
+PUT http://localhost:8080/api/v1/alunos/c9aef86e-a2ba-46ea-8f93-c58cfd973c11
+Content-Type: application/json
+
+{
+  "nome": "Marcos Godinho Damazzini",
+  "cpf": "321.321.321-32"
+}
+
+### Remover o Aluno
+DELETE  http://localhost:8080/api/v1/alunos/3699f1e1-9e62-41f7-9e8f-bb0f2a560ce3
+Content-Type: application/json

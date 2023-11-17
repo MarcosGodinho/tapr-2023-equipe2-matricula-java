@@ -10,6 +10,4 @@ public interface MatriculaService {
     public Matricula getById(String id);
     public Matricula update(String id, Matricula matricula);
     public Matricula delete(String id);
-
-
 }

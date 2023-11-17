@@ -13,13 +13,24 @@ public class Matricula {
     @PartitionKey
     @GeneratedValue
     public String id;
-
     public String cpf;
-
     public Date dataIngresso;
-    
     public int periodoCursando;
+    public String alunoId;
+    public String cursoId;
 
+    public String getCursoId() {
+        return cursoId;
+    }
+    public void setCursoId(String cursoId) {
+        this.cursoId = cursoId;
+    }
+    public String getAlunoId() {
+        return alunoId;
+    }
+    public void setAlunoId(String alunoId) {
+        this.alunoId = alunoId;
+    }
     public String getID() {
         return id;
     }
