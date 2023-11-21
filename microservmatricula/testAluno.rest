@@ -6,8 +6,8 @@ POST http://localhost:8080/api/v1/alunos
 Content-Type: application/json
 
 {
-  "nome": "Marcos Enrico Damazzini Godinho",
-  "cpf": "123.434.755-10"
+  "nome": "Enrico Damazzini Godinho",
+  "cpf": "644.324.195-60"
 }
 
 ### Atualizar o Aluno
