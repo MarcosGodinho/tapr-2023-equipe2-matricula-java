@@ -8,10 +8,10 @@ Content-Type: application/json
 {
   "dataIngresso": "2023-11-09",
   "periodoCursando": "3",
-  "cpf": "123.434.755-10",
+  "cpf": "432.555.111-10",
   "aluno": {
-    "nome": "Marcos Godinho Damazzini",
-    "cpf": "321.321.321-32"
+    "nome": "Marcos Damazzini",
+    "cpf": "982.412.099-32"
   },
   "curso": {
     "nome": "Estutura de Dados"
