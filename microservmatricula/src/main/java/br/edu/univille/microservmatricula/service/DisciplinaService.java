@@ -10,4 +10,5 @@ public interface DisciplinaService {
     public Disciplina getById(String id);
     public Disciplina update(String id, Disciplina Disciplina);
     public Disciplina delete(String id);
+    public Disciplina update(Disciplina disciplina);
 }

@@ -68,4 +68,9 @@ public class DisciplinaServiceImpl implements DisciplinaService{
         return null;
     }
 
+    @Override
+    public Disciplina update(Disciplina disciplina) {
+        return repository.save(disciplina);
+    }
+
 }

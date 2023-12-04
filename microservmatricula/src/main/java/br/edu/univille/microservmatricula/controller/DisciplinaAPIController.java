@@ -16,6 +16,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.edu.univille.microservmatricula.entity.Disciplina;
 import br.edu.univille.microservmatricula.service.DisciplinaService;
+import io.dapr.Topic;
+
+import org.springframework.http.MediaType;
+
+import io.dapr.client.domain.CloudEvent;
 
 @RestController
 @RequestMapping("/api/v1/disciplinas")
@@ -66,6 +71,15 @@ public class DisciplinaAPIController {
         if(disciplina == null){
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
+        return 
+            new ResponseEntity<Disciplina>
+            (disciplina, HttpStatus.OK);
+    }
+
+    @Topic(name = "${app.component.topic.disciplina}", pubsubName = "${app.component.service}")
+    @PostMapping(path = "/event", consumes = MediaType.ALL_VALUE)
+    public ResponseEntity<Disciplina> atualizarCliente(@RequestBody(required = false) CloudEvent<Disciplina> cloudEvent){
+        var disciplina = service.update(cloudEvent.getData());
         return 
             new ResponseEntity<Disciplina>
             (disciplina, HttpStatus.OK);
